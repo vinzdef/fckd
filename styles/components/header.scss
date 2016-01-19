@@ -1,0 +1,39 @@
+.Header {
+	position: relative;
+	height: 30vh;
+	width: 100%;
+	background-color: black;
+	z-index: 1;
+
+	&:before {
+		z-index: -1;
+		outline: 3px solid black;
+		position: absolute;
+		content: '';
+		height: 110%;
+		width: 180%;
+		left: -10%;
+		background-color: black;
+		border: 100px solid black;
+		transform: rotate(-2deg);
+		box-sizing:border-box;
+		@include elevation(2);
+	}
+
+	h1 {
+		font-size: 5rem;
+		font-weight: bold;
+		line-height: 25vh;
+		width: 100%;
+		text-align: center;
+		color: white;
+		font-family: 'Bitter', serif;
+	}
+
+	.EmojiRoulette {
+		position: absolute;
+		bottom: -35%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

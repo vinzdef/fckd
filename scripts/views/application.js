@@ -3,6 +3,9 @@ import { connect } from 'react-redux'
 
 import { fetchInsults } from '../actions/insults'
 
+import Header from './header'
+
+
 export default class Application extends React.Component {
 
 	componentDidMount() {
@@ -12,12 +15,14 @@ export default class Application extends React.Component {
 	render() {
 		return <div className="Application">
 			{ this.props.children }
+			<Header>				
+			</Header>
 		</div>
 	}
 }
 
 function mapStateToProps(storeState, ownProps) {
-	const { insults } = storeState	
+	const { insults } = storeState
 
 	return {
 		insults

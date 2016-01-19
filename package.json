@@ -4,7 +4,7 @@
   "description": "Insults as a Service",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --hot --inline -d --watch --config webpack.config.js"
+    "dev": "NODE_ENV=development webpack-dev-server --hot --inline -d --host 0.0.0.0 --watch --config webpack.config.js"
   },
   "repository": {
     "type": "git",
