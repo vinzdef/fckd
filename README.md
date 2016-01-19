@@ -1,2 +1,2 @@
 # fckd
-Insults as a Service.
+Insults as a Service
