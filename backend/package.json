@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+	"prod": "node index.js"
+  },
+  "author": "Vincent De Feo (ghzmdr)",
+  "license": "ISC"
+}
