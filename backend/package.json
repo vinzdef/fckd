@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
-	"prod": "node index.js"
+    "prod": "node index.js"
   },
   "author": "Vincent De Feo (ghzmdr)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4"
+  }
 }

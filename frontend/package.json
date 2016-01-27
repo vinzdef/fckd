@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --hot --inline -d --host 0.0.0.0 --watch --config webpack.config.js",
-	"prod": "NODE_ENV=production webpack -p --config webpack.config.js && cp index.html build/index.html && node ./prod-server.js"
+    "prod": "NODE_ENV=production webpack -p --config webpack.config.js && cp index.html build/index.html && node ./prod-server.js"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "body-parser": "^1.14.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "isomorphic-fetch": "^2.2.1",
     "react": "^0.14.6",
