@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "prod": "npm run prod:back && npm run prod:front",
-	"prod:back": "cd backend && npm run prod",
-	"prod:front": "cd frontend && npm run prod",
-
-	"dev": "npm run dev:back && npm run dev:front",
-	"dev:back": "cd backend && npm run dev",
-	"dev:front": "cd frontend && npm run dev"
+    "prod:back": "cd backend && npm run prod",
+    "prod:front": "cd frontend && npm run prod",
+    "dev": "npm run dev:back && npm run dev:front",
+    "dev:back": "cd backend && npm run dev",
+    "dev:front": "cd frontend && npm run dev"
   },
   "repository": {
     "type": "git",
@@ -21,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/ghzmdr/fckd/issues"
   },
-  "homepage": "https://github.com/ghzmdr/fckd#readme"
+  "homepage": "https://github.com/ghzmdr/fckd#readme",
+  "dependencies": {
+    "mongoose": "^4.3.7",
+    "morgan": "^1.6.1"
+  }
 }
