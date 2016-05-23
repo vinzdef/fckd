@@ -3,13 +3,13 @@ import React from 'react'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import { Provider } from 'react-redux'
 
-import DevTools from './dev/dev-tools'
+import DevTools from './scripts/dev/dev-tools'
 
-import configureStore from './configure-store'
+import configureStore from './scripts/configure-store'
 
-import Application from './views/application'
+import Application from './scripts/views/application'
 
-import '../styles/main.scss'
+import './styles/main.scss'
 
 ReactDOM.render (
 	<Provider store={ configureStore() }>
@@ -21,4 +21,4 @@ ReactDOM.render (
 			</Router>
 		</div>
 	</Provider>
-, document.querySelector('#root'))
+, document.querySelector('#Root'))
